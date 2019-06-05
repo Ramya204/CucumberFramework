@@ -120,7 +120,7 @@ public class FeatureFileDefinition extends BaseClass {
 		
 		click(m.getCheck_all());
 		click(m.getCancelall());
-		simpleOrConfirmAlerts("Cancel");
+		alerts("simple", "accept");
 		m.getLogout().click();
 	}
 }

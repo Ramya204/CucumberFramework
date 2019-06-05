@@ -103,7 +103,7 @@ public class Test extends BaseClass {
 		m=new MyItenaryLocator();
 		click(m.getCheck_all());
 		click(m.getCancelall());
-		simpleOrConfirmAlerts("ok");
+		alerts("simple", "accept");
 		// alertWindow();
 		m.getLogout().click();
 
