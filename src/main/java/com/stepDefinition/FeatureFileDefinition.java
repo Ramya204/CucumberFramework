@@ -27,6 +27,21 @@ public class FeatureFileDefinition extends BaseClass {
 	public static SelectPageLocator s;
 	public static MyItenaryLocator m;
 
+	@Given("^User verify the url and title$")
+	public void user_verify_the_url_and_title() {
+		if (getCurrentUrl().contains("adactin")) {
+			System.out.println("true");
+		} else {
+			System.out.println("false");
+
+		}
+		if (getTitle().contains("Hotel")) {
+			System.out.println("true");
+		} else {
+			System.out.println("false");
+		}
+	}
+
 	@Given("^user enters username and password and logs in \"([^\"]*)\" and \"([^\"]*)\"$")
 	public void user_enters_username_and_password_and_logs_in_and(String un, String ps) {
 
