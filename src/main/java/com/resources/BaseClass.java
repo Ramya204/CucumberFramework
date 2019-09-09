@@ -51,15 +51,15 @@ public class BaseClass {
 	}
 
 	// get current URL
-	public static void getCurrentUrl() {
+	public static String getCurrentUrl() {
 		String currentUrl = driver.getCurrentUrl();
-		System.out.println("The currentURL is= " + currentUrl);
+		return currentUrl;
 	}
 
 	// get title
-	public static void getTitle() {
+	public static String getTitle() {
 		String title = driver.getTitle();
-		System.out.println("The title is= " + title);
+		return title;
 	}
 
 	// close browser

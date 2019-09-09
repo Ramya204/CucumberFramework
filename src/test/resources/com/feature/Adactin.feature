@@ -1,6 +1,10 @@
 @tag
 Feature: User tests the functionality of Adactin hotel bookig url
 
+  Background: User verify the url and title
+    Given User verify the url and title
+
+	@smokeTest
   @tag1
   Scenario Outline: user enters login details and checks the function
     Given user enters username and password and logs in "<username>" and "<password>"
@@ -12,6 +16,6 @@ Feature: User tests the functionality of Adactin hotel bookig url
     And user selects all the bookins and cancel it
 
     Examples: 
-      | username  | password   | location | hotel        | roomtype | roomno | indate     | outdate    | adults | childrens | fname  | lname | address  | cardno           | cardtype | expmonth | expyear | cvv  |
-      | Pubg12345 | 1234567890 | Sydney   | Hotel Creek  | Double   |      1 | 07/06/2019 | 09/06/2019 |      2 |         1 | Pepper | potts | Brittany | 1234567890098765 | AMEX     |        2 |    2020 | 1122 |
-      | Pubg12345 | 1234567890 | Brisbane | Hotel Creek | Deluxe   |      2 | 10/06/2019 | 12/06/2019 |      2 |         2 | Tony | stark | Newyork | 1234567790098765 | AMEX     |        2 |    2020 | 1122 |
+      | username  | password   | location | hotel       | roomtype | roomno | indate     | outdate    | adults | childrens | fname  | lname | address  | cardno           | cardtype | expmonth | expyear | cvv  |
+      | Pubg12345 | 1234567890 | Sydney   | Hotel Creek | Double   |      1 | 07/06/2019 | 09/06/2019 |      2 |         1 | Pepper | potts | Brittany | 1234567890098765 | AMEX     |        2 |    2020 | 1122 |
+      | Pubg12345 | 1234567890 | Brisbane | Hotel Creek | Deluxe   |      3 | 10/06/2019 | 12/06/2019 |      2 |         2 | Tony   | stark | Newyork  | 1234567790098765 | AMEX     |        2 |    2020 | 1122 |
